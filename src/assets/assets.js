@@ -1,6 +1,7 @@
 import { FaLightbulb, FaPaintBrush, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot } from 'react-icons/fa';
 
 import profileImg from '../assets/profile.jpeg';
+import aboutImg from '../assets/about.webp';
 import projectImg1 from '../assets/project1.avif';
 import projectImg2 from '../assets/project2.avif';
 import projectImg3 from '../assets/project3.avif';
@@ -10,7 +11,7 @@ import projectImg6 from '../assets/project6.avif';
 
 
 export const assets = {
-    profileImg,
+    profileImg, aboutImg
 }
 
 
@@ -141,8 +142,7 @@ export const workData = [
     role: "Senior Frontend Developer",
     company: "TechCorp Inc.",
     duration: "2020 - Present",
-    description:
-      "Leading frontend development for enterprise clients, implementing modern frameworks, and mentoring junior developers.",
+    description:"Leading frontend development for enterprise clients, implementing modern frameworks, and mentoring junior developers.",
     color: "purple"
   },
   {

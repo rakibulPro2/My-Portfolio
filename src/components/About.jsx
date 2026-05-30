@@ -15,25 +15,12 @@ export default function About() {
         </p>
 
         {/* Image + My journey */}
-        <div className="flex flex-col md:flex-row items-center gap-12">
+        <div className="flex flex-col md:flex-row gap-12">
           {/* left side image content */}
           <div className="md:w-1/2 rounded-2xl overflow-hidden">
-            <motion.img
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.9, ease: "easeOut" }}
-              viewport={{ once: false, amount: 0.2 }}
-              id="about"
-              src=""
-              alt="aboutProfile"
-            />
-          </div>
-
-          {/* Right side text content */}
-          <motion.div className="md:w-1/2">
             <div className="rounded-2xl p-8">
               <h3 className="text-2xl font-semibold mb-8">My Journey</h3>
-              <p className="mb-5">
+              <p className="mb-3">
                 I'm a passionate full-stack developer with over 5 years of
                 experience creating digital solutions for businesses around the
                 world. My journey started with basic HTML/CSS websites and has
@@ -48,6 +35,28 @@ export default function About() {
                 web.
               </p>
             </div>
+            <motion.img
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.2 }}
+              id="about-profile"
+              src={assets.aboutImg}
+              alt="aboutProfile"
+            />
+          </div>
+
+          {/* Right side text content */}
+          <motion.div
+            className="md:w-1/2"
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.2 }}
+            id="about-right-content"
+            src={assets.aboutImg}
+            alt="about-right-content"
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {aboutInfo.map((data, index) => {
                 return (
@@ -55,10 +64,10 @@ export default function About() {
                     <div className="text-4xl text-purple mb-4">
                       <data.icon />
                     </div>
-                    <h3 className="text-2xl font-semibold mb-4">{data.title}</h3>
-                    <p>
-                      {data.description}
-                    </p>
+                    <h3 className="text-2xl font-semibold mb-4">
+                      {data.title}
+                    </h3>
+                    <p>{data.description}</p>
                   </div>
                 );
               })}
