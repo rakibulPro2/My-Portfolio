@@ -24,7 +24,7 @@ export default function Projects() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
             {
-                projects.map((project, index)=> <ProjectCard key={index} title ={project.title} description={project.description} image={project.image} tech={project.tech} icons={project.icons} />)
+                projects.map((project, index)=> <ProjectCard key={index} {...project} />)
             }
         </div>
       </div>
