@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { aboutInfo, assets } from "../assets/assets";
+import { aboutInfo, assets } from "../data/portfolioData";
 
 export default function About() {
   return (

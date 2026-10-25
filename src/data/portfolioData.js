@@ -1,13 +1,13 @@
 import { FaLightbulb, FaPaintBrush, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot } from 'react-icons/fa';
 
-import profileImg from '../assets/profile.jpeg';
-import aboutImg from '../assets/about.webp';
-import projectImg1 from '../assets/project1.avif';
-import projectImg2 from '../assets/project2.avif';
-import projectImg3 from '../assets/project3.avif';
-import projectImg4 from '../assets/project4.avif';
-import projectImg5 from '../assets/project5.avif';
-import projectImg6 from '../assets/project6.avif';
+import profileImg from '../data/profile.jpeg';
+import aboutImg from '../data/about.webp';
+import projectImg1 from '../data/project1.avif';
+import projectImg2 from '../data/project2.avif';
+import projectImg3 from '../data/project3.avif';
+import projectImg4 from '../data/project4.avif';
+import projectImg5 from '../data/project5.avif';
+import projectImg6 from '../data/project6.avif';
 
 
 export const assets = {
