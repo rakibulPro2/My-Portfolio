@@ -4,7 +4,7 @@ import { aboutInfo, assets } from "../data/portfolioData";
 
 export default function About() {
   return (
-    <motion.div className="py-20 bg-dark-200">
+    <motion.div className="py-20 bg-dark-200" id="about">
       <div className="container mx-0 px-6">
         <h1 className="text-3xl text-center font-bold mb-4">
           About

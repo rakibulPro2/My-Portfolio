@@ -40,7 +40,7 @@ export default function Navbar() {
           </a>
 
           <a
-            href="#project"
+            href="#projects"
             className="relative text-white transition duration-300 hover:text-purple group:"
           >
             <span>Project</span>
