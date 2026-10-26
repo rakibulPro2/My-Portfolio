@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { aboutInfo, assets } from "../data/portfolioData";
+import { aboutDescription, aboutImage, aboutInfo, aboutTitle } from "../data/portfolioData";
 
 export default function About() {
   return (
@@ -19,21 +19,11 @@ export default function About() {
           {/* left side image content */}
           <div className="md:w-1/2 rounded-2xl overflow-hidden">
             <div className="rounded-2xl p-8">
-              <h3 className="text-2xl font-semibold mb-8">My Journey</h3>
+              <h3 className="text-2xl font-semibold mb-8">{aboutTitle}</h3>
               <p className="mb-3">
-                I'm a passionate full-stack developer with over 5 years of
-                experience creating digital solutions for businesses around the
-                world. My journey started with basic HTML/CSS websites and has
-                evolved into building complex web applications with modern
-                frameworks.
+                {aboutDescription}
               </p>
-              <p className="mb-5">
-                When I'm not coding, you can find me exploring new technologies,
-                contributing to open-source projects, or sharing my knowledge
-                through tech blogs and tutorials. I believe in continuous
-                learning and pushing the boundaries of what's possible on the
-                web.
-              </p>
+              
             </div>
             <motion.img
               initial={{ opacity: 0, y: 100 }}
@@ -41,7 +31,7 @@ export default function About() {
               transition={{ duration: 0.9, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.2 }}
               id="about-profile"
-              src={assets.aboutImg}
+              src={aboutImage}
               alt="aboutProfile"
             />
           </div>
@@ -54,7 +44,7 @@ export default function About() {
             transition={{ duration: 0.9, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.2 }}
             id="about-right-content"
-            src={assets.aboutImg}
+            src={aboutImage}
             alt="about-right-content"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

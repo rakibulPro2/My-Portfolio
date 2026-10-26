@@ -6,6 +6,8 @@ export default function ProjectCard({
   image,
   tech,
   icons,
+  demoLink,
+  codeLink
 }) {
   return (
     <div className="bg-dark-300 rounded-2xl overflow-hidden transition-transform duration-300 hover:-translate-y-2 cursor pointer">
@@ -24,8 +26,8 @@ export default function ProjectCard({
           ))}
         </div>
         <div className="flex gap-3">
-            <a href="#" className="basis-1/2 text-center px-4 py-2 rounded-lg bg-purple-700 hover:bg-purple font-semibold">View Demo</a>
-            <a href="#" className="basis-1/2 text-center px-4 py-2 rounded-lg border border-purple font-semibold hover:bg-purple/20">Code</a>
+            <a href={demoLink} className="basis-1/2 text-center px-4 py-2 rounded-lg bg-purple-700 hover:bg-purple font-semibold">View Demo</a>
+            <a href={codeLink} className="basis-1/2 text-center px-4 py-2 rounded-lg border border-purple font-semibold hover:bg-purple/20">Code</a>
         </div>
       </div>
     </div>

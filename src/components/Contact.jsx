@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import { FaDribbble, FaEnvelope, FaGithub, FaLinkedin, FaMapMarkedAlt, FaPhone, FaTwitter } from 'react-icons/fa';
+import { contactEmail, contactLocation, contactPhone, dribbleLink, githubLink, linkedInLink, twitterLink } from '../data/portfolioData';
 
 
 const Contact = () => {
@@ -56,7 +57,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className='text-lg font-semibold mb-2'>Location</h3>
-                <p className='text-gray-400'>New Delhi, Ashok Nagr</p>
+                <p className='text-gray-400'>{contactLocation}</p>
               </div>
             </div>
 
@@ -66,7 +67,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className='text-lg font-semibold mb-2'>Email</h3>
-                <p className='text-gray-400'>example@gmail.com</p>
+                <p className='text-gray-400'>{contactEmail}</p>
               </div>
             </div>
 
@@ -76,26 +77,26 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className='text-lg font-semibold mb-2'>Phone</h3>
-                <p className='text-gray-400'>+971 03473933</p>
+                <p className='text-gray-400'>{contactPhone}</p>
               </div>
             </div>
 
             <div className='pt-4'>
               <h3>Follow Me</h3>
               <div className='flex space-x-4'>
-                <a href="#" className='w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center text-purple hover:bg-purple hover:text-white transition duration-300' >
+                <a href={githubLink} className='w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center text-purple hover:bg-purple hover:text-white transition duration-300' >
                   <FaGithub />
                 </a>
 
-                <a href="#" className='w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center text-purple hover:bg-purple hover:text-white transition duration-300' >
+                <a href={linkedInLink} className='w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center text-purple hover:bg-purple hover:text-white transition duration-300' >
                   <FaLinkedin />
                 </a>
 
-                <a href="#" className='w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center text-blue-400 hover:bg-blue-400 hover:text-white transition duration-300' >
+                <a href={twitterLink} className='w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center text-blue-400 hover:bg-blue-400 hover:text-white transition duration-300' >
                   <FaTwitter />
                 </a>
 
-                <a href="#" className='w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center text-pink hover:bg-pink hover:text-white transition duration-300' >
+                <a href={dribbleLink} className='w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center text-pink hover:bg-pink hover:text-white transition duration-300' >
                   <FaDribbble />
                 </a>
               </div>

@@ -28,12 +28,7 @@ export default function Projects() {
                 projects.map((project, index)=> <ProjectCard key={index} {...project} />)
             }
         </div>
-        <div className="text-center mt-12">
-            <a href="#" className="inline-flex items-center gap-3 border border-purple rounded-lg px-6 py-3 hover:bg-purple/20 ">
-               <span>View More Project</span>
-               <FaArrowRight />
-            </a>
-        </div>
+        
       </div>
     </motion.div>
   );

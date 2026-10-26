@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {assets} from "../data/portfolioData"
+import { contactLink, headline, name, profileImage, role, viewWorkLink} from "../data/portfolioData"
 
 export default function Hero() {
   return (
@@ -12,28 +12,27 @@ export default function Hero() {
       id="home"
       className="md:min-h-screen flex items-center pt-20 pb-16 bg-gradient-to-r from-[#1a1a1a] via-[#2d2d2d] to-[#1a1a1a]"
     >
-      <div className="container px-2 md:px-0 mx-auto flex flex-col md:flex-row justify-between items-center ">
+      <div className="container px-2 md:px-0 mx-auto flex flex-col md:flex-row justify-between items-center  ">
         {/* left side content */}
         <div className="md:w-1/2 mb-10 md:mb-0">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Hi, I'm <span className="text-purple">Rakibul Islam</span>
+            Hi, I'm <span className="text-purple">{name}</span>
           </h1>
           <h2 className="text-2xl md:text-4xl font-semibold mb-6 typewriter">
-            Full Stack Developer
+            {role}
           </h2>
           <p className="text-lg text-gray-300 mb-8">
-            I create stunning web experiences with modern technologies and
-            innovative design.
+            {headline}
           </p>
           <div className="flex space-x-4 md:space-x-6">
             <a
-              href=""
+              href={viewWorkLink}
               className="py-2 md:py-3 px-4 md:px-6 rounded-lg bg-purple"
             >
               View Work
             </a>
             <a
-              href=""
+              href={contactLink}
               className="py-2 md:py-3 px-4 md:px-6 rounded-lg border border-purple-700 hover:bg-purple/20"
             >
               Contact Me
@@ -56,7 +55,7 @@ export default function Hero() {
             }}
             className="relative rounded-[20px] w-64 h-64 md:w-80 md:h-90 object-cover 
  z-10 animate-float"
-             src={assets.profileImg} alt="Profile" />
+             src={profileImage} alt="Profile" />
           </div>
 
         </div>

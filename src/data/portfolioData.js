@@ -1,6 +1,7 @@
 import { FaLightbulb, FaPaintBrush, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot } from 'react-icons/fa';
 
-import profileImg from '../data/profile.jpeg';
+import logo from '../data/portfolio-logo.png'
+import profileImg from '../data/profile.jpg';
 import aboutImg from '../data/about.webp';
 import projectImg1 from '../data/project1.avif';
 import projectImg2 from '../data/project2.avif';
@@ -10,11 +11,54 @@ import projectImg5 from '../data/project5.avif';
 import projectImg6 from '../data/project6.avif';
 
 
-export const assets = {
-    profileImg, aboutImg
-}
 
 
+// navbar section Data =============
+export const portfolioLogo = logo;
+export const navMenuItem = [
+  {
+    menuName: 'Home',
+    menuLink: '#home'
+  },
+  {
+    menuName: 'About',
+    menuLink: '#about'
+  },
+  {
+    menuName: 'Skills',
+    menuLink: '#skills'
+  },
+  {
+    menuName: 'Projects',
+    menuLink: '#projects'
+  },
+  {
+    menuName: 'Experience',
+    menuLink: '#experience'
+  },
+  {
+    menuName: 'Contact',
+    menuLink: '#contact'
+  },
+  
+
+];
+
+// Hero section Data ====================
+export const name = "Aylan Romain";
+export const profileImage = profileImg;
+export const role = "Frontend Developer";
+export const headline = "I create stunning web experiences with modern technologies and innovative design.";
+export const viewWorkLink = "#projects";
+export const contactLink = "#contact"
+
+
+// About section Data  ===================
+export const aboutTitle = "My Journey";
+export const aboutDescription = `I'm a passionate full-stack developer with over 5 years of experience creating digital solutions for businesses around the world. My journey started with basic HTML/CSS websites and has evolved into building complex web applications with modern frameworks.
+
+When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through tech blogs and tutorials. I believe in continuous learning and pushing the boundaries of what's possible on the web.`;
+export const aboutImage = aboutImg;
 export const aboutInfo = [
     {
       icon: FaLightbulb,
@@ -37,7 +81,7 @@ export const aboutInfo = [
   ];
 
 
-
+// skills section Data ================
 export const skills = [
   {
     title: 'Frontend Development',
@@ -78,7 +122,7 @@ export const skills = [
 ];
 
 
-
+// project sections Data  ==========================
 export const projects = [
   {
     title: "E-Commerce Platform",
@@ -86,8 +130,8 @@ export const projects = [
     image: projectImg1,
     tech: ["React", "Node.js", "MongoDB", "Stripe"],
     icons: [FaReact, FaNodeJs, FaDatabase , FaStripe],
-    demo: "#",
-    code: "#",
+    demoLink: "#",
+    codeLink: "#",
   },
   {
     title: "Task Management App",
@@ -95,8 +139,8 @@ export const projects = [
     image: projectImg2,
     tech: ["Vue.js", "Firebase", "Tailwind CSS", "WebSockets"],
     icons: [FaVuejs, FaFire, FaCloud , FaDatabase],
-    demo: "#",
-    code: "#",
+    demoLink: "#",
+    codeLink: "#",
   },
   {
     title: "Fitness Tracker",
@@ -104,8 +148,8 @@ export const projects = [
     image: projectImg3,
     tech: ["React Native", "GraphQL", "MySQL", "Chart.js"],
     icons: [FaReact, FaDatabase],
-    demo: "#",
-    code: "#",
+    demoLink: "#",
+    codeLink: "#",
   },
   {
     title: "Portfolio Website",
@@ -113,8 +157,8 @@ export const projects = [
     image: projectImg4,
     tech: ["Next.js", "Tailwind CSS", "Framer Motion", "Markdown"],
     icons: [FaReact, FaCloud],
-    demo: "#",
-    code: "#",
+    demoLink: "#",
+    codeLink: "#",
   },
   {
     title: "Chat App",
@@ -122,8 +166,8 @@ export const projects = [
     image: projectImg5,
     tech: ["Socket.IO", "React", "Node.js", "MongoDB"],
     icons: [FaReact, FaNodeJs, FaDatabase ],
-    demo: "#",
-    code: "#",
+    demoLink: "#",
+    codeLink: "#",
   },
   {
     title: "AI Image Generator",
@@ -131,12 +175,13 @@ export const projects = [
     image: projectImg6,
     tech: ["React", "OpenAI API", "Cloudinary", "Tailwind CSS"],
     icons: [FaRobot, FaReact, FaCloud],
-    demo: "#",
-    code: "#",
+    demoLink: "#",
+    codeLink: "#",
   }
 ];
 
 
+// Work section Data ======================
 export const workData = [
   {
     role: "Senior Frontend Developer",
@@ -162,3 +207,18 @@ export const workData = [
     color: "blue"
   }
 ];
+
+
+// Contact section Data ================= 
+
+export const contactLocation = "New Delhi, Ashok Nagr";
+export const contactEmail = "example@gmail.com";
+export const contactPhone = "+971 03473933";
+export const githubLink = "#";
+export const linkedInLink = "#";
+export const twitterLink = "#";
+export const dribbleLink = "#";
+
+
+// Footer section Data ============
+export const footerText = "@copywrite 2026 Created by Rakib";
